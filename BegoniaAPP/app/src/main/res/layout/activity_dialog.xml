@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+        android:layout_marginTop="50dp"
+        android:gravity="start"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="软件用户隐私服务说明书\n"
+        ></TextView>
+        <TextView
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一、引言\n\t我们热烈欢迎您使用我们的软件产品和服务！在这个数字化的世界中，我们深知个人隐私和数据安全的重要性。因此，我们致力于保护您的隐私，并尽可能地提供透明度，以便您了解我们如何处理您的信息。在您开始使用我们的产品和服务之前，我们强烈建议您仔细阅读本用户隐私服务说明书，以了解我们对隐私的承诺以及我们如何收集、使用、分享和保护您的个人信息。\n\n\t二、个人信息的收集和使用\n\t1.在您使用我们的软件和服务时，我们可能会收集您提供的某些个人信息，例如您的姓名、电子邮件地址、电话号码等。这些信息有助于我们为您提供更个性化的服务。\n\t2.我们收集这些信息的目的是为了提供、维护、改进和开发我们的产品和服务。例如，我们可能会使用这些信息来响应您的查询、提供客户支持或向您发送关于我们产品和服务的更新或通知。\n\n\t三、信息的分享和披露\n\t1.我们承诺不会向任何第三方出售或租赁您的个人信息。除非得到您明确的同意，否则我们不会与任何第三方共享这些信息。\n\t2.在某些情况下，例如当法律要求或为了保护我们和其他用户的权益时，我们可能需要披露您的个人信息。在这种情况下，我们将尽可能地通知您。\n\n四、信息的存储和安全\n\t1.我们采取各种措施来保护您的个人信息安全。这包括使用加密技术来保护数据传输，以及使用安全协议来保护数据存储。\n\t2.尽管如此，由于互联网的开放性，我们无法保证信息在传输过程中100%的安全性。因此，请您在提供个人信息时务必谨慎，并尽量避免发送敏感信息。\n\n五、隐私政策的变更\n \t请注意，我们保留在任何时候修改本隐私政策的权利。如果本隐私政策有所变动，我们将在相关页面上发布修改后的隐私政策内容，并尽可能地通知所有用户。\n\t请您理解，以上内容仅为示例，并不能作为任何法律文件使用。在制定实际的用户隐私服务说明书时，建议您寻求专业法律人士的帮助，以确保其合法性和有效性。感谢您对我们产品和服务的支持！
+    "></TextView>
+     <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+         android:layout_gravity="center"
+        android:layout_height="wrap_content"
+         android:layout_marginBottom="80dp"
+        android:text="我已认真阅读"
+        android:id="@+id/back"
+     ></Button>
+    </LinearLayout>
+</ScrollView>
