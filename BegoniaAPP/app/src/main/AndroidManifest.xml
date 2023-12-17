@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         tools:targetApi="31">
         <activity
-            android:name=".otherSingUpActivity"
+            android:name=".otherSignUpActivity"
+            android:theme="@style/Theme.ZKYapp"
             android:exported="false" />
         <activity
             android:name=".EventOrderActivity"

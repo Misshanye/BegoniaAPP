@@ -29,7 +29,7 @@ public class RegisterActivity extends AppCompatActivity {
         RegisterListener lis=new RegisterListener();
         quit.setOnClickListener(lis);
         check.setOnClickListener(lis);
-        check.setOnClickListener(lis);
+        choice.setOnClickListener(lis);
     }
     class RegisterListener implements View.OnClickListener{
         @Override

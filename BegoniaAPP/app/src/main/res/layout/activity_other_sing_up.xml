@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/registerAtivity"
-    tools:context=".otherSingUpActivity"
+    tools:context=".otherSignUpActivity"
     android:background="@color/cardview_light_background">
 
     <LinearLayout
@@ -78,25 +78,21 @@
                     android:hint="请输入密码"
                     ></EditText>
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
-                <Button
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
-                    android:text="登录"
-                    android:id="@+id/sign"
-                    ></Button>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
 
+            <Button
+                android:id="@+id/sign"
+                android:layout_width="250dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="登录"></Button>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal">
                 <RadioButton
                     android:id="@+id/choice"
                     android:layout_width="wrap_content"

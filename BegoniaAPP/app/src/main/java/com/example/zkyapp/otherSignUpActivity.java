@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-public class otherSingUpActivity extends AppCompatActivity {
+public class otherSignUpActivity extends AppCompatActivity {
     //退回登陆界面
     ImageButton quit;
     //选择服务说明书
@@ -28,17 +28,17 @@ public class otherSingUpActivity extends AppCompatActivity {
         Listener lis=new Listener();
         quit.setOnClickListener(lis);
         check.setOnClickListener(lis);
-        check.setOnClickListener(lis);
+        choice.setOnClickListener(lis);
     }
     class Listener implements View.OnClickListener{
         @Override
         public void onClick(View view) {
             if(view.getId()==R.id.quit)
             {
-                startActivity(new Intent(otherSingUpActivity.this,MainActivity.class));
+                startActivity(new Intent(otherSignUpActivity.this,MainActivity.class));
             }
             else if (view.getId()==R.id.check) {
-                Intent it = new Intent(otherSingUpActivity.this, DialogActivity.class);
+                Intent it = new Intent(otherSignUpActivity.this, DialogActivity.class);
                 startActivity(it);
             }
             else if (view.getId()==R.id.choice) {

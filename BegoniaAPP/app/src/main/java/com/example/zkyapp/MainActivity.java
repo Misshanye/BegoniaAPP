@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.compose.material3.SnackbarKt;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -15,7 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.util.Log;
 
-import com.example.zkyapp.databinding.ActivityEventOrderBinding;
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String TAG="MainActivity 登陆界面";
     Button getCode,signUp,switchActivity;
-    TextView check,switchSignActivity;
+    TextView check,switchSignActivity,otherSignUp;
     EditText ed;
     RadioButton choice;
     ImageView userImage;
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         userImage=findViewById(R.id.userImage);
         //注册跳转
         switchSignActivity=findViewById(R.id.switchRegisterActivity);
+        otherSignUp=findViewById(R.id.otherSignUp);
 
 
         MyListener lis=new MyListener();
@@ -53,9 +56,7 @@ public class MainActivity extends AppCompatActivity {
         switchSignActivity.setOnClickListener(lis);
         check.setOnClickListener(lis);
         choice.setOnClickListener(lis);
-
-        FloatingActionButton fab=findViewById(R.id.fab);
-        fab.setOnClickListener(lis);
+        otherSignUp.setOnClickListener(lis);
     }
     class  MyListener implements View.OnClickListener {
         @Override
@@ -90,9 +91,10 @@ public class MainActivity extends AppCompatActivity {
               Intent it = new Intent(MainActivity.this, RegisterActivity.class);
               startActivity(it);
           }
-          else if (view.getId()==R.id.fab)
+          else if(view.getId()==R.id.otherSignUp)
           {
-              Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+              Intent it = new Intent(MainActivity.this, otherSignUpActivity.class);
+              startActivity(it);
           }
         }
     }
